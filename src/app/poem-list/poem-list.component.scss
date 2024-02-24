@@ -1,0 +1,12 @@
+.list-group {
+  cursor: pointer !important;
+  text-decoration: none;
+  color: black;
+  border: 1px solid transparent;
+  padding: 2px 5px;
+}
+
+.selected {
+  border: 1px solid black;
+  background-color: white;
+}
