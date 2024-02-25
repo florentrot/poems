@@ -12,3 +12,8 @@
   border: 1px solid black;
   background-color: white;
 }
+
+.disabled {
+  pointer-events: none;
+  color: gray;
+}
