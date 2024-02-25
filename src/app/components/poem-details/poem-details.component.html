@@ -1,6 +1,8 @@
 <div class="card">
   <div class="card-body">
     <h5 class="card-title">{{ poem?.title }}</h5>
+    <i class="fw-lighter">{{poem?.date}}</i>
+    <br><br>
     <pre class="card-text" [innerHTML]=poem?.text></pre>
   </div>
 </div>

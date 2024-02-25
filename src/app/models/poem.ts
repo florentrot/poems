@@ -2,12 +2,12 @@ export class Poem {
   id: number;
   title: string;
   text: string;
-  data: string;
+  date: string;
 
-  constructor(id: number, title: string, data: string, text: string) {
+  constructor(id: number, title: string, date: string, text: string) {
     this.id = id;
     this.title = title;
-    this.data = data;
+    this.date = date;
     this.text = text;
   }
 }

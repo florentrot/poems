@@ -25,7 +25,8 @@ export class PoemService {
       '11-diversitate.json',
       '12-fericirea-relativa.json',
       '13-gandul.json',
-      '14-seara-pe-centrul-vechi.json'
+      '14-seara-pe-centrul-vechi.json',
+      '15-poezia-timpului.json'
     ];
 
     const requests = poemFiles.map(file => this.http.get<Poem>('assets/poezii/' + file));
