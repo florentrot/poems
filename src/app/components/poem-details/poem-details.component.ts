@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {Poem} from "../models/poem";
+import {Poem} from "../../models/poem";
 
 @Component({
   selector: 'app-poem-details',

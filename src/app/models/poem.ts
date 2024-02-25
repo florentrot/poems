@@ -1,13 +1,13 @@
 export class Poem {
   id: number;
   title: string;
-  content: string;
-  author: string;
+  text: string;
+  data: string;
 
-  constructor(id: number, title: string, content: string, author: string) {
+  constructor(id: number, title: string, data: string, text: string) {
     this.id = id;
     this.title = title;
-    this.content = content;
-    this.author = author;
+    this.data = data;
+    this.text = text;
   }
 }

@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 pb-4">
+      <div>
+        <a class="list-group"
+           [ngClass]="this.selectedPoem?.id==poem.value.id? 'selected':''"
+           (click)="selectPoem(poem.key)"
+           *ngFor="let poem of poemsMap | keyvalue | reverse">{{ poem.value.title }}</a>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <app-poem-details [poem]="selectedPoem"></app-poem-details>
+    </div>
+  </div>
+</div>
