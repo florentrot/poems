@@ -18,12 +18,11 @@ export class PoemListComponent implements OnInit {
   ngOnInit(): void {
     this.poemService.getPoems().pipe(
       tap(data => {
-        this.selectedPoem = data.get(data.size);
+        this.selectedPoem = data.get(data.size-1);
       })
     ).subscribe(poemsMap => {
       this.poemsMap = poemsMap;
     });
-    this.selectedPoem = this.poemsMap.get(0);
   }
 
   selectPoem(key: number) {

@@ -3,8 +3,8 @@
     <div class="col-md-4 pb-4">
       <div>
         <a class="list-group"
-           [ngClass]="[(this.selectedPoem?.id == poem.value.id && this.selectedPoem?.id!=10? 'selected' : ''),
-           (this.selectedPoem?.id == 10 && this.selectedPoem?.id == poem.value.id ? 'disabled' : '')]"
+           [ngClass]="[(selectedPoem?.id == poem.value.id && selectedPoem?.id!=10? 'selected' : ''),
+           (10 == poem.value.id || 18 == poem.value.id ? 'disabled' : '')]"
 
            (click)="selectPoem(poem.key)"
            *ngFor="let poem of poemsMap | keyvalue | reverse">{{ poem.value.title }}</a>

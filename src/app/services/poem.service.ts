@@ -21,13 +21,15 @@ export class PoemService {
       '7-furtuna-dinaintea-linistii.json',
       '8-insomnii.json',
       '9-inspirat-din-faust.json',
-      '10-cugetare-existentiala.json',
+      '10-2023.json',
       '11-diversitate.json',
       '12-fericirea-relativa.json',
       '13-gandul.json',
       '14-seara-pe-centrul-vechi.json',
       '15-poezia-timpului.json',
-      '16-semn-de-primavara.json'
+      '16-semn-de-primavara.json',
+      '17-mai-amortit-ca-primavara.json',
+      '18-2024.json'
     ];
 
     const requests = poemFiles.map(file => this.http.get<Poem>('assets/poezii/' + file));
