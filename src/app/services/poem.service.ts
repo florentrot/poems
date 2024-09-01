@@ -29,7 +29,19 @@ export class PoemService {
       '15-poezia-timpului.json',
       '16-semn-de-primavara.json',
       '17-mai-amortit-ca-primavara.json',
-      '18-2024.json'
+      '18-un-rau-secatuit.json',
+      '19-poezia-timpului.json',
+      '20-insomnii-partea-a-2-a.json',
+      '21-anxietate.json',
+      '22-determinism.json',
+      '23-identitate-pierduta.json',
+      '24-vinovat-in-bucla.json',
+      '25-viata-ca-un-fulger.json',
+      '26-overthinking.json',
+      '27-overthinking-2.json',
+      '28-overthinking-3.json',
+      '29-septembrie-la-fel.json',
+      '30-2024.json'
     ];
 
     const requests = poemFiles.map(file => this.http.get<Poem>('assets/poezii/' + file));
